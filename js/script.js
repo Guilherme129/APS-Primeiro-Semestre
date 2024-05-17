@@ -4,6 +4,8 @@ var header = document.getElementById('novoMenuPrincipal')
 var rodape = document.getElementById('rodape')
 //Declaração da variável do elemento pelo ID 'menuSecundario'
 var menuSecundario = document.getElementById('menuSecundario')
+//Declaração da variável do elemento pelo ID 'menuSecundario_imagens'
+var menuSecundario_imagens = document.getElementById('menuSecundario-imagens')
 
 // Adiciona um ouvinte de evento para o botão de modo noturno
 document.getElementById('btModoEscuro').addEventListener('click', function () {
@@ -18,10 +20,10 @@ document.getElementById('btModoEscuro').addEventListener('click', function () {
   }
 
   //É visto se a variável rodape contém a classe 'dark', caso tenha ela retira, caso não adiciona classe
-  if (rodape.classList.contains('rodapeDark')) {
-    rodape.classList.remove('rodapeDark')
+  if (rodape.classList.contains('dark')) {
+    rodape.classList.remove('dark')
   } else {
-    rodape.classList.add('rodapeDark')
+    rodape.classList.add('dark')
   }
 
   //É visto se a variável menuSecundario contém a classe 'dark', caso tenha ela retira, caso não adiciona classe
@@ -29,6 +31,13 @@ document.getElementById('btModoEscuro').addEventListener('click', function () {
     menuSecundario.classList.remove('menuSecundario-dark')
   } else {
     menuSecundario.classList.add('menuSecundario-dark')
+  }
+
+  //É visto se a variável menuSecundario-imagens contém a classe 'dark', caso tenha ela retira, caso não adiciona classe
+  if (menuSecundario_imagens.classList.contains('dark')) {
+    menuSecundario_imagens.classList.remove('dark')
+  } else {
+    menuSecundario_imagens.classList.add('dark')
   }
 })
 

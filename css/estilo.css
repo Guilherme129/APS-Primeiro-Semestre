@@ -263,10 +263,7 @@ footer  {
 
 /* Estilos CSS para galeria de imagens com rolagem horizontal */
 .menuSecundario-dark {
-  background-color: #242b6b; /* Cor de fundo */
-  overflow: auto; /* Habilita a rolagem */
-  white-space: nowrap; /* Impede quebrar em várias linhas */
-  padding: 10px; /* Espaçamento interno */
+  background-color: #313c9f; /* Cor de fundo */
 }
 
 /* Define o estilo para o elemento com a classe 'quadro' */
@@ -312,4 +309,9 @@ footer  {
   -ms-transform: translate(-50%, -50%); /* Mesmo para navegadores Internet Explorer/Edge */
   transform: translate(-50%, -50%); /* Mesmo para outros navegadores */
   text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.imagemReferencia {
+  margin: 0;
+  font-size: small;
 }
