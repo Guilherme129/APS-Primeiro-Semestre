@@ -1,0 +1,315 @@
+@font-face {
+  font-family: freeman; /* Define a fonte personalizada chamada "freeman" */
+  src: url(../fontes/Freeman-Regular.ttf); /* Especifica o caminho da fonte */
+}
+
+* {
+  margin: 0; /* Elimina margens padrão para todos os elementos */
+  padding: 0; /* Elimina padding padrão para todos os elementos */
+}
+
+/* Estilos para o corpo */
+body {
+  font-family: freeman; /* Define a família de fontes para o corpo */
+}
+
+body::before {
+  content: " "; /* Adiciona um conteúdo vazio antes do corpo */
+  position: fixed; /* Posiciona de forma fixa */
+  width: 100%; /* Largura 100% do viewport */
+  height: 100%; /* Altura 100% do viewport */
+  opacity: 0.3; /* Opacidade de 0.3 */
+  z-index: -1; /* Z-index -1 para colocar atrás de outros elementos */
+  background-size: 100%; /* Tamanho do fundo 100% */
+  background-image: url(../imagens/imagem-de-fundo.png); /* Imagem de fundo */
+}
+
+/* Estilos para cabeçalhos e parágrafos */
+h1, h2, h3, h4, p {
+  display: flex; /* Torna os cabeçalhos e parágrafos contêineres flexíveis */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  font-family: freeman; /* Define a família de fontes */
+  margin: 20px; /* Margem de 20px para todos os lados */
+} 
+
+/* Estilo específico para h6 */
+h6 {
+  margin: 20px; /* Margem de 20px */
+}
+
+/* Estilos de cor para cabeçalhos */
+h1, h2, h4 {
+  color: #1a226d; /* Cor azul escura */
+}
+
+/* Estilos de cor para h3 */
+h3 {
+  color: rgb(255, 255, 255); /* Cor branca */
+  font-weight: 100; /* Peso da fonte 100 */
+}
+
+/* Estilos para parágrafos */
+p {
+  font-family: freeman; /* Define a família de fontes */
+  font-size: 1.3rem; /* Tamanho da fonte */
+  text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Estilos para links */
+a {
+  font-family: freeman; /* Define a família de fontes */
+  font-size: 1.3rem; /* Tamanho da fonte */
+  font-weight: 100; /* Peso da fonte 100 */
+  text-decoration: none; /*Retira o sublinhado do link*/
+}
+
+/* Estilos para a navegação superior */
+.menuPrincipal {
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+  background-color: #4756db; /* Cor de fundo */
+}
+
+/* Estilos para os itens de navegação */
+.menuPrincipal a {
+  float: left; /* Alinha os itens à esquerda */
+  display: block; /* Transforma os links em elementos de bloco */
+  color: #f2f2f2; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto */
+  padding: 14px 16px; /* Espaçamento interno */
+  text-decoration: none; /* Remove a decoração */
+  font-size: 17px; /* Tamanho da fonte */
+}
+
+/* Estilos de hover para links */
+a:hover {
+  background-color: #dceb14; /* Cor de fundo ao passar o mouse */
+  ;
+  color: #1a226d; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para link da página atual */
+a.pgAtual {
+  background-color: #1a226d; /* Cor de fundo do link ativo */
+  color: white; /* Cor do texto do link ativo */
+}
+
+/* Estilos para o ícone de navegação */
+.menuPrincipal .icone {
+  display: none; /* Esconde o ícone de navegação */
+}
+
+/* Estilos para tornar a navegação responsiva em telas pequenas */
+@media screen and (max-width: 600px) {
+  .menuPrincipal a:not(:first-child) {
+    display: none; /* Esconde todos os links, exceto o primeiro, em telas pequenas */
+  }
+  .menuPrincipal a.icone {
+    float: right; /* Alinha o ícone de navegação à direita */
+    display: block; /* Exibe o ícone de navegação */
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .menuPrincipal.responsivo {
+    position: relative; /* Define a posição relativa para a barra de navegação responsiva */
+  }
+  .menuPrincipal.responsivo .icone{
+    position: absolute; /* Define a posição absoluta para o ícone de navegação responsivo */
+    right: 0; /* Alinha o ícone de navegação responsivo à direita */
+    top: 0; /* Alinha o ícone de navegação responsivo ao topo */
+  }
+  .menuPrincipal.responsivo a {
+    float: none; /* Remove o alinhamento flutuante dos links */
+    display: block; /* Transforma os links em elementos de bloco */
+    text-align: left; /* Alinha o texto dos links à esquerda */
+  }
+}
+
+/* Estilos para o ícone de lixo eletrônico */
+.lixo-eletronico{
+  margin: auto; /* Margem automática */
+  display: block; /* Transforma em bloco */
+  width: 30%; /* Largura de 30% */
+}
+
+/* Estilos CSS para o menu horizontal com rolagem */
+.menuSecundario {
+  background-color: #4756db; /* Cor de fundo */
+  overflow: auto; /* Habilita a rolagem */
+  white-space: nowrap; /* Impede quebrar em várias linhas */
+}
+
+/* Estilos para os itens do menu horizontal */
+.menuSecundario a {
+  display: inline-block; /* Transforma os links em elementos de bloco inline */
+  color: white; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto */
+  padding: 14px; /* Espaçamento interno */
+  text-decoration: none; /* Remove a decoração */
+}
+
+/* Estilos para avatares */
+.iconePerfil  {
+  vertical-align: middle; /* Alinhamento vertical */
+  width: 7em; /* Largura */
+  height: 7rem; /* Altura */
+  border-radius: 50%; /* Borda circular */
+  margin-right: 1rem; /* Margem direita */
+}
+
+/* Estilos para o botão */
+#btModoEscuro{
+  width: 3em; /* Largura */
+  height: 3rem; /* Altura */
+  border: solid 3px #1a226d; /* Cor e grossura da borda */
+  border-radius: 50%; /* Borda circular */
+  background-color: white; /* Cor de fundo */
+  margin: 20px; /* Margem */
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease; /* Transições */
+}
+
+.contato{
+  padding: 2rem; /* Preenchimento interno */
+  text-align: center; /* Alinhamento do texto ao centro */
+  justify-content: space-around; /* Distribui os links igualmente ao longo do espaço disponível */
+}
+
+
+/* Estilo do botão ao passar o mouse */
+#btModoEscuro:hover{
+  transform: scale(1.2); /* Aumenta a escala */
+}
+
+/* Estilos para a imagem do botão */
+#ImagemBtModoEscuro {
+  width: 2em; /* Largura */
+  height: 2rem; /* Altura */
+}
+
+/* Estilos para as seções sobrenós, referencia, contato */
+.sobrenos, .referencia, .contato {
+  width: auto; /* Largura automática */
+}
+
+/* Estilos CSS para galeria de imagens com rolagem horizontal */
+.menuSecundario-container {
+  background-color: #4756db; /* Cor de fundo */
+  overflow: auto; /* Habilita a rolagem */
+  white-space: nowrap; /* Impede quebrar em várias linhas */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilos para as imagens na galeria */
+.menuSecundario-container img {
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilos para o rodapé */
+footer  {
+  background-color:  #4756db; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  bottom: 0; /* Alinhamento ao final da página */
+  padding: 1rem; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  font-family: "impact"; /* Fonte */
+  font-size: 16pt; /* Tamanho da fonte */
+  display: flex; /* Torna os links um contêiner flexível */
+  justify-content: space-around; /* Distribui igualmente */
+  list-style-type: none; /* Remove marcadores de lista */
+}
+
+/* Estilos para o rodapé e a seção de alunos */
+.rodape, .alunos {
+  display: grid; /* Exibe como grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Define as colunas */
+  grid-gap: 0.5em; /* Espaçamento entre linhas e colunas */
+}
+
+/* Estilos para o tema escuro */ 
+.dark-mode {
+  background-color: rgb(34, 34, 34); /* Define a cor de fundo do modo escuro como preto */
+  color: white; /*Estiliza as palavras para a cor branca no modo escuro*/
+}
+
+.dark-mode h1 {
+  color: #b2b8ed; /*Estiliza a cor das das tags h1 no modo escuro*/ 
+}
+
+.dark-mode h2 {
+  color: #b2b8ed; /*Estiliza a cor das das tags h2 no modo escuro*/
+}
+
+.dark-mode h4 {
+  color: #b2b8ed; /*Estiliza a cor das das tags h4 no modo escuro*/
+}
+
+.dark-mode a {
+  color: #b2b8ed; /*Estiliza a cor das das tags a no modo escuro*/
+}
+
+.dark {
+  background-color: #242b6b; /*Estiliza a cor de fundo no modo escuro*/
+  color: #394be8; /*Estiliza a cor das palavras no modo escuro*/
+}
+
+.rodapeDark {
+  display: grid; /* Exibe como grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Define as colunas */
+  grid-gap: 0.5em; /* Espaçamento entre linhas e colunas */
+  background-color: #242b6b; /*Estiliza a cor de fundo*/
+}
+
+/* Estilos CSS para galeria de imagens com rolagem horizontal */
+.menuSecundario-dark {
+  background-color: #242b6b; /* Cor de fundo */
+  overflow: auto; /* Habilita a rolagem */
+  white-space: nowrap; /* Impede quebrar em várias linhas */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Define o estilo para o elemento com a classe 'quadro' */
+.quadro {
+  position: relative; /* Define a posição relativa para facilitar o posicionamento absoluto dos elementos filhos */
+  width: 50%; /* Define a largura do quadro como 50% do seu contêiner pai */
+}
+
+/* Define o estilo para as imagens dentro do quadro */
+.imagemPerfil {
+  display: block; /* Define a exibição do elemento como bloco para ocupar toda a largura disponível */
+  width: 20rem; /* Define a largura da imagem */
+  height: 20em; /* Define a altura da imagem */
+}
+
+/* Define o estilo para a transição de fundo */
+.transicao {
+  position: absolute; /* Define a posição absoluta para que possa ser sobreposta ao elemento pai */
+  top: 0; /* Alinha o topo da transição com o topo do elemento pai */
+  bottom: 0; /* Alinha o fundo da transição com o fundo do elemento pai */
+  left: 0; /* Alinha a esquerda da transição com a esquerda do elemento pai */
+  right: 0; /* Alinha a direita da transição com a direita do elemento pai */
+  width: 20rem; /* Define a largura da transição */
+  height: 20em; /* Define a altura da transição */
+  opacity: 0; /* Define a opacidade inicial como 0 para torná-la invisível */
+  transition: .5s ease; /* Define a transição de opacidade com duração de 0.5 segundos e uma curva de aceleração suave */
+  background-color: #1a226d; /* Define a cor de fundo da transição */
+}
+
+/* Define o estilo para a transição de opacidade quando o mouse passa sobre o elemento pai */
+.quadro:hover .transicao {
+  opacity: 1; /* Define a opacidade como 1 quando o mouse está sobre o elemento pai */
+}
+
+/* Define o estilo para o nome do aluno sobreposto à imagem */
+.nomeAluno {
+  color: white; /* Define a cor do texto como branca */
+  font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+  position: absolute; /* Define a posição absoluta para que possa ser sobreposta ao elemento pai */
+  top: 50%; /* Alinha o topo do nome do aluno ao centro vertical do elemento pai */
+  left: 50%; /* Alinha a esquerda do nome do aluno ao centro horizontal do elemento pai */
+  -webkit-transform: translate(-50%, -50%); /* Move o elemento 50% para a esquerda e 50% para cima, para centralizá-lo */
+  -ms-transform: translate(-50%, -50%); /* Mesmo para navegadores Internet Explorer/Edge */
+  transform: translate(-50%, -50%); /* Mesmo para outros navegadores */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}

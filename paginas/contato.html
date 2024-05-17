@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados para definições da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Contato</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../imagens/planeta-terra.png" />
+    
+</head>
+<div class="aplicacaoModoEscuro">
+<body>
+<!-- Barra de navegação superior -->
+<div class="menuPrincipal" id="novoMenuPrincipal">
+  <a href="../index.html">Home</a>
+  <a href="desafios e soluções.html">Desafios e Soluções</a>
+  <a href="contato.html" class="pgAtual">Contato</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="javascript:void(0);" class="icone" onclick="funcaoNovoMenuPrincipal()">
+  <i class="fa fa-bars"></i>
+
+  </a>
+
+</div>
+
+<button id="btModoEscuro">
+  <img id="ImagemBtModoEscuro" src="../imagens/Lua.png" alt="Lua" />
+</button>
+
+<section class="contato">
+  <h2 class="titulo">Entre em contato</h2>
+  <form action="" class="formulario">
+      <input type="text" placeholder="Nome" class="nome">
+      <input type="text" placeholder="Sobrenome" class="sobrenome">
+      <input type="number" placeholder="Telefone" class="telefone">
+      <div class="gostou">
+          <label class="label-gostou" for="gostou">Gostou do nosso site?</label>
+          <label class="input-gostou"><input type="radio" name="gostou" id="gostou">Sim</label>
+          <label class="input-gostou"><input type="radio" name="gostou" id="gostou" >Não</label>
+      </div>
+      <textarea name="mensagem" id="mensagem" placeholder="Mensagem" cols="60" rows="6"></textarea>
+      <input type="button" value="Enviar" onclick="mostrarMensagem()">
+  </form>
+</section>
+
+<div class="alunos">
+  <div class="quadro">
+    <img src="../imagens/Rodolfo.jfif" alt="Imagem Rodolfo Santos Meira Silva" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Rodolfo Santos Meira Silva</div>
+    </div>
+  </div>
+
+  <div class="quadro">
+    <img src="../imagens/Guilherme.jfif" alt="Imagem Guilherme Camargo Corrêa" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Guilherme Camargo Corrêa</div>
+    </div>
+  </div>
+
+  <div class="quadro">
+    <img src="../imagens/Sergio.png" alt="Imagem Sérgio Antonio Vieira Correa da Silva" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Sérgio Antonio Vieira Correa da Silva</div>
+    </div>
+  </div>
+
+  <div class="quadro">
+    <img src="../imagens/Kaique.png" alt="Imagem Kaique Otavio Alves Custodio Dias" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Kaique Otavio Alves Custodio Dias</div>
+    </div>
+  </div>
+
+  <div class="quadro">
+    <img src="../imagens/Adrielli.png" alt="Imagem Adrielli Cocenço Cleto" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Adrielli Cocenço Cleto</div>
+    </div>
+  </div>
+
+  <div class="quadro">
+    <img src="../imagens/Ricardo.png" alt="Icone Ricardo Augusto de Almeida" class="imagemPerfil">
+    <div class="transicao">
+      <div class="nomeAluno">Ricardo Augusto de Almeida</div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Título e descrição para o menu horizontal com rolagem -->
+<main>
+  <!-- Conteúdo principal -->
+  <h1>Sobre Nós</h1>
+  <p>
+    Somos alunos do bacharelado da ciência da computação da Universidade
+    Paulista (UNIP) e desenvolvemos esse site para informar sobre o
+    impacto do descarte incorreto de pilhas e baterias.
+  </p>
+  <h1>2024 Sorocaba</h1>
+  </main>
+
+
+  <script src="../js/script.js"></script>
+</div>
+</body>
+</html>

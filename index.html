@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados para definições da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Home</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="imagens/planeta-terra.png" />
+</head>
+
+
+<div class="aplicacaoModoEscuro">
+<body>
+<!-- Barra de navegação superior -->
+<div class="menuPrincipal" id="novoMenuPrincipal">
+  <a href="index.html" class="pgAtual">Home</a>
+  <a href="paginas/desafios e soluções.html">Desafios e Soluções</a>
+  <a href="paginas/contato.html">Contato</a>
+  <a href="paginas/sobre.html">Sobre</a>
+  <a href="javascript:void(0);" class="icone" onclick="funcaoNovoMenuPrincipal()">
+  <i class="fa fa-bars"></i>
+
+  </a>
+</div>
+
+<button id="btModoEscuro">
+  <img id="ImagemBtModoEscuro" src="imagens/Lua.png" alt="Lua" />
+</button>
+<img src="imagens/Rodolfo.jfif" alt="Icone Rodolfo Santos Meira Silva" class="iconePerfil">
+<img src="imagens/Guilherme.jfif" alt="Icone Guilherme Camargo Corrêa" class="iconePerfil">
+<img src="imagens/Sergio.png" alt="Icone Sérgio Antonio Vieira Correa da Silva" class="iconePerfil">
+<img src="imagens/Kaique.png" alt="Icone Kaique Otavio Alves Custodio Dias" class="iconePerfil">
+<img src="imagens/Adrielli.png" alt="Icone Adrielli Cocenço Cleto" class="iconePerfil">
+<img src="imagens/Ricardo.png" alt="Icone Ricardo Augusto de Almeida" class="iconePerfil">
+
+
+<!-- Título e descrição para o menu horizontal com rolagem -->
+<main>
+  <!-- Conteúdo principal -->
+
+    <br><h1>O Impacto do Descarte Incorreto de Materiais Eletrônicos</h1><br>
+    <p>Em um mundo cada vez mais tecnológico, a gestão ambiental de pilhas e baterias surge como um desafio crítico para a sustentabilidade global. A Resolução n° 401/2008 do CONAMA (Conselho Nacional do Meio Ambiente) representa um marco na legislação ambiental brasileira, estabelecendo diretrizes para o manejo adequado desses materiais e a proteção da saúde humana. Este trabalho busca explorar as múltiplas faces do gerenciamento de pilhas e baterias, desde a conscientização sobre o descarte correto até as perspectivas tecnológicas e legais que moldam as práticas atuais. Ao analisar o estado da reciclagem de baterias no Brasil e os marcos históricos da educação ambiental, pretendemos fornecer uma ampla visão das políticas, desafios e soluções que podem levar a um futuro mais sustentável e equilibrado.</p><br>
+
+  </main>
+<div id="menuSecundario" class="menuSecundario-container">
+  <a href="paginas/educacao ambiental e conscientizacao.html"><img src="imagens/Figura1.png" alt="Figura 1" width="600" height="400"></a>
+  <a href="paginas/educacao ambiental e conscientizacao.html"><img src="imagens/Figura2.jpg" alt="Figura 2" width="600" height="400"></a>
+  <a href="paginas/educacao ambiental e conscientizacao.html"><img src="imagens/Figura3.png" alt="Figura 3" width="600" height="400"></a>
+  <a href="paginas/educacao ambiental e conscientizacao.html"><img src="imagens/Figura4.png" alt="Figura 4" width="600" height="400"></a>
+  <a href="paginas/gerenciamento sustentavel de residuos.html"><img src="imagens/Figura5.png" alt="Figura 3" width="600" height="400"></a>
+  <a href="paginas/analise de dados e estudos ambientais.html"><img src="imagens/Figura6.png" alt="Figura 4" width="600" height="400"></a>
+</div>
+
+<!-- Rodapé -->
+<footer id="rodape" class="rodape">
+  <!-- Informações sobre a equipe -->
+  <div class="sobrenos">
+    <h4>Sobre Nós</h4>
+    <h3>
+      Somos alunos do bacharelado da ciência da computação da Universidade
+      Paulista (UNIP) e desenvolvemos esse site para informar sobre o
+      impacto do descarte incorreto de pilhas e baterias.
+    </h3>
+    <h3>2024 Sorocaba</h3>
+  </div>
+  <!-- Referências bibliográficas -->
+  <div class="referencia">
+    <h3><a href="paginas/referencias bibliograficas.html">Referências bibliográficas</a></h3>
+  </div>
+  <!-- Formulário de contato -->
+  <div class="contato">
+    <h4>Entre Em Contato</h4>
+    <form action="">
+      <input
+        type="text"
+        placeholder="seu e-mail"
+      />
+      <input
+        type="text"
+        placeholder="mensagem..."
+      />
+      <input type="button" value="Enviar" onclick="mostrarMensagem()">
+    </form>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>
